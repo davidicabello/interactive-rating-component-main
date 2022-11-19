@@ -28,6 +28,11 @@ p {
     font-size: 15px;
 }
 
+a {
+    text-decoration: none;
+    justify-content: space-around;
+}
+
 .starDiv {
     background: grey;
     width: 1rem;
@@ -50,21 +55,27 @@ p {
 
 .scoresBtns {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+
     padding: 0.8rem;
+    text-decoration: none;
 }
 
 .btn-primary {
+    display: flex;
     width: 100px;
+    height: 35px;
     color: hsl(0, 0%, 100%);
     background: hsl(216, 12%, 8%);
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     outline: none;
     border: none;
+}
+
+.btn-primary:hover {
+    background: hsl(217, 12%, 63%);
 }
 
 .submitBtnDiv {
@@ -75,12 +86,23 @@ p {
 
 .submitBtn {
     color: hsl(0, 0%, 100%);
-    background-color: hsl(25, 97%, 53%);
-    border-radius: 10px;
+    background: hsl(25, 97%, 53%);
+    border-radius: 20px;
     width: 100%;
-    margin: 1rem 1rem;
+    margin: 0 0.5rem;
     text-decoration: none;
     cursor: pointer;
     outline: none;
     border: none;
+    padding: .5rem;
+}
+
+.submitBtn:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    ;
+}
+
+input[type="radio"] {
+    display: none;
 }
