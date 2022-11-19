@@ -28,11 +28,6 @@ p {
     font-size: 15px;
 }
 
-a {
-    text-decoration: none;
-    justify-content: space-around;
-}
-
 .starDiv {
     background: grey;
     width: 1rem;
@@ -55,9 +50,9 @@ a {
 
 .scoresBtns {
     display: flex;
-
     padding: 0.8rem;
     text-decoration: none;
+    justify-content: space-between;
 }
 
 .btn-primary {
@@ -78,6 +73,10 @@ a {
     background: hsl(217, 12%, 63%);
 }
 
+.btn-primary:checked {
+    background: hsl(25, 97%, 53%);
+}
+
 .submitBtnDiv {
     display: flex;
     justify-content: center;
@@ -95,6 +94,7 @@ a {
     outline: none;
     border: none;
     padding: .5rem;
+    text-transform: uppercase;
 }
 
 .submitBtn:hover {
@@ -105,4 +105,8 @@ a {
 
 input[type="radio"] {
     display: none;
+}
+
+input[type="radio"]:checked {
+    background: hsl(25, 97%, 53%);
 }
