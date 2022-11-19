@@ -7,9 +7,6 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -20,32 +17,24 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 cardContainer">
-          <div class="card">
-            <div class="cardContent">
-              <div class="starDiv"><img src="/images/icon-star.svg" alt=""></div>
-              <div class="cardText">
-                <h3>How did we do?</h3>
-                <p>Please let us know how we did with your support request. All feedback is appreciated
-                  to help us improve our offering!</p>
-              </div>
-
-              <div class="scoresBtns">
-                <button type="submit" class="btn btn-primary">1</button>
-                <button type="submit" class="btn btn-primary">2</button>
-                <button type="submit" class="btn btn-primary">3</button>
-                <button type="submit" class="btn btn-primary">4</button>
-                <button type="submit" class="btn btn-primary">5</button>
-              </div>
-
-              <div class="submitBtnDiv">
-                <button class="submitBtn btn btn-secondary">Submit</button>
-              </div>
-            </div>
-          </div>
+  <div class="container">
+    <div class="card">
+      <div class="cardContent">
+        <div class="cardText">
+          <img src="/images/icon-star.svg" alt="">
+          <h3>How did we do?</h3>
+          <p>Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+        </div>
+        <div class="scoresBtns">
+          <a type="submit" class="btn-primary">1</a>
+          <a type="submit" class="btn-primary">2</a>
+          <a type="submit" class="btn-primary">3</a>
+          <a type="submit" class="btn-primary">4</a>
+          <a type="submit" class="btn-primary">5</a>
+        </div>
+        <div class="submitBtnDiv">
+          <button class="submitBtn">SUBMIT</button>
         </div>
       </div>
     </div>
@@ -71,10 +60,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
