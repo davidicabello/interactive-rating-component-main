@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
@@ -20,32 +29,29 @@
 
 .cardText {
     text-align: left;
-    color: hsl(0, 0%, 100%)
+    color: var(--white);
 }
 
 p {
-    color: hsl(217, 12%, 63%);
-    font-size: 15px;
+    color: var(--light-grey);
+    font-size: 12px;
 }
 
-.starDiv {
-    background: grey;
-    width: 1rem;
-    border-radius: 40%;
-    margin-top: 1.5rem;
+.icon {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
 }
 
 .card {
     margin-top: 5rem;
-    background: hsl(213, 19%, 18%);
+    background: var(--very-dark-blue);
     margin: 0 auto;
     max-width: 18rem;
     border-radius: 20px;
     padding: 0.8rem;
-}
-
-.cardContent {
-    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .scoresBtns {
@@ -55,39 +61,11 @@ p {
     justify-content: space-between;
 }
 
-.btn-primary {
-    display: flex;
-    width: 100px;
-    height: 35px;
-    color: hsl(0, 0%, 100%);
-    background: hsl(216, 12%, 8%);
-    border-radius: 50px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    outline: none;
-    border: none;
-}
-
-.btn-primary:hover {
-    background: hsl(217, 12%, 63%);
-}
-
-.btn-primary:checked {
-    background: hsl(25, 97%, 53%);
-}
-
-.submitBtnDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .submitBtn {
-    color: hsl(0, 0%, 100%);
-    background: hsl(25, 97%, 53%);
+    color: var(--white);
+    background: var(--orange);
     border-radius: 20px;
-    width: 100%;
+    width: 95%;
     margin: 0 0.5rem;
     text-decoration: none;
     cursor: pointer;
@@ -98,15 +76,64 @@ p {
 }
 
 .submitBtn:hover {
-    background: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);
-    ;
+    background: var(--white);
+    color: var(--orange);
+}
+
+input[type="radio"]+p {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    font-size: 15px;
+    color: var(--white);
+    text-align: center;
+}
+
+input[type="radio"]+p:hover {
+    background-color: var(--medium-grey);
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+p {
+    background-color: var(--orange);
 }
 
 input[type="radio"] {
     display: none;
 }
 
-input[type="radio"]:checked {
-    background: hsl(25, 97%, 53%);
+h2 {
+    color: var(--white);
+}
+
+#selection {
+    color: var(--orange);
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+}
+
+.card_thankYou {
+    background-color: var(--dark-blue);
+    width: 330px;
+    height: 360px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.card_thankYou p {
+    color: var(--light-grey);
+    text-align: center;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.hidden {
+    display: none;
 }

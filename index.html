@@ -18,67 +18,57 @@
 
   <!-- Rating state start -->
   <div class="container">
-    <div class="card">
-      <div class="cardContent">
-        <div class="cardText">
-          <img src="/images/icon-star.svg" alt="">
-          <h3>How did we do?</h3>
-          <p>Please let us know how we did with your support request. All feedback is appreciated
-            to help us improve our offering!</p>
-        </div>
-        <div class="scoresBtns">
-          <div class="btn-primary">
-            <label for="1">
-              <input type="radio" id="1" name="rating" value="1">
-              <p>1</p>
-            </label>
-          </div>
-          <div class="btn-primary">
-            <label for="2">
-              <input type="radio" id="2" name="rating" value="2">
-              <p>2</p>
-            </label>
-          </div>
-          <div class="btn-primary">
-            <label for="3">
-              <input type="radio" id="3" name="rating" value="3">
-              <p>3</p>
-            </label>
-          </div>
-          <div class="btn-primary">
-            <label for="4">
-              <input type="radio" id="4" name="rating" value="4">
-              <p>4</p>
-            </label>
-          </div>
-          <div class="btn-primary">
-            <label for="5">
-              <input type="radio" id="5" name="rating" value="5">
-              <p>5</p>
-            </label>
-          </div>
-        </div>
+    <div class="card" id="main">
 
-        <div class="submitBtnDiv">
-          <button class="submitBtn" ondblclick="submit()">SUBMIT</button>
-        </div>
+      <div class="cardText">
+        <img src="/images/icon-star.svg" alt="icon-star" class="icon">
+        <h3>How did we do?</h3>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
       </div>
+
+      <div class="scoresBtns">
+        <label for="1">
+          <input type="radio" id="1" name="rating" value="1">
+          <p>1</p>
+        </label>
+
+        <label for="2">
+          <input type="radio" id="2" name="rating" value="2">
+          <p>2</p>
+        </label>
+
+        <label for="3">
+          <input type="radio" id="3" name="rating" value="3">
+          <p>3</p>
+        </label>
+
+        <label for="4">
+          <input type="radio" id="4" name="rating" value="4">
+          <p>4</p>
+        </label>
+
+        <label for="5">
+          <input type="radio" id="5" name="rating" value="5">
+          <p>5</p>
+        </label>
+
+      </div>
+      <button class="submitBtn" onclick="submit()">SUBMIT</button>
     </div>
   </div>
-
-
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
+  <div class="card_thankYou hidden" id="thanks">
+    <img src="/images/illustration-thank-you.svg" alt="">
+    <p id="selection"></p>
 
-  You selected
-  <p id="selection"></p> out of 5
+    <h2>Thank you!</h2>
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
-
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </div>
   <!-- Thank you state end -->
 
 
